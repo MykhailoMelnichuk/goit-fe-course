@@ -1,3 +1,4 @@
+  /*Reset styles*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,9 +6,103 @@
     border: 0;
   }
 
-  ol. ui {
+  body {
+    width: 1200px;
+    height: auto;
+    padding: 0px 150px 20px 150px;
+    font-family: Playfair Display, sans-serif;
+    font-size: 14px;
+    color: #626262;
+
+  }
+
+  /*Styles of the top menu of the site*/
+  header {
+    height: 191px;
+    padding-top: 77px;
+  }
+
+  nav {
+    margin: 0 auto;
+    width: 600px;
+    
+  }
+
+  ul {
     list-style: none;
   }
 
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
   
+  li.menu-item {
+    width: 146px;  
+    text-align: center;
+  }
+
+  li.menu-item>a {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  li.first>a {
+    color: #03a9f4;
+  }
+
+  /*Styles of blocks of articles*/
+
+  .post {
+    display: inline-block;
+    width: 448px;
+    height: auto;
+    margin-bottom: 130px;
+  }
+
+  .post img {
+    display: block;
+    width: 420px;
+    height: 280px;
+}
+  .left-post {
+    padding-right: 28px;
+  }
   
+  .right-post {
+    padding-left: 28px;
+  }
+
+  .post-title {
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    padding-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 34px;
+  }
+
+  /*Button styles*/
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    font-family: Playfair Display, sans-serif;
+    font-size: 20px;
+    color: #626262;
+    border: 1px solid;
+    border-color: #626262;
+    padding: 20px 35px;
+    margin-bottom: 75px;
+    background-color: #ffffff;
+  }
+
