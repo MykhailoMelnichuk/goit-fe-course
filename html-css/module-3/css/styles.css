@@ -1,104 +1,90 @@
-  /*Reset styles*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-
-  body {
-    width: 1200px;
-    height: auto;
-    padding: 0px 150px 20px 150px;
+  body, p, button {
     font-family: Playfair Display, sans-serif;
     font-size: 14px;
+    font-weight: 400;
+    font-weight: 24px;
     color: #626262;
-
   }
 
-  /*Styles of the top menu of the site*/
+  .wrapper {
+    width: 900px;
+    margin: 0 auto;
+  }
+
   header {
     height: 191px;
     padding-top: 77px;
   }
 
   nav {
-    margin: 0 auto;
-    width: 600px;
-    
+    text-align: center; 
   }
 
-  ul {
-    list-style: none;
+  nav li {
+    display: inline-block;    
+    margin-top: 75px;
+    margin-right: 100px;
+    margin-bottom: 100px;
   }
 
-  li {
-    display: inline-block;
+  nav li:last-child {
+    margin-right: 0;
   }
 
-  a {
+  nav li a {
     text-decoration: none;
-  }
-  
-  li.menu-item {
-    width: 146px;  
-    text-align: center;
-  }
-
-  li.menu-item>a {
-    text-align: center;
     text-transform: uppercase;
   }
-
-  li.first>a {
+  
+  nav li a:hover {
     color: #03a9f4;
   }
 
-  /*Styles of blocks of articles*/
-
+  .wrapper-post {
+    font-size: 0;
+  }
+  
   .post {
     display: inline-block;
-    width: 448px;
-    height: auto;
+    width: 420px;
+    font-size: 14px;
+    margin-right: 60px;
     margin-bottom: 130px;
+  }
+
+  .post:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .post:nth-child(-n+2) {
+    margin-bottom: 55px;
   }
 
   .post img {
     display: block;
-    width: 420px;
-    height: 280px;
+    width: 100%;
+    height: auto;
 }
-  .left-post {
-    padding-right: 28px;
-  }
-  
-  .right-post {
-    padding-left: 28px;
-  }
 
-  .post-title {
+  .post .post-title {
     font-family: Ubuntu, sans-serif;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
     color: #b4ad9e;
-    padding-top: 20px;
-    margin-bottom: 28px;
+    margin-top: 26px;
+    margin-bottom: 30px;
   }
 
-  h2 {
+  .post h3 {
     font-size: 30px;
-    margin-bottom: 34px;
-  }
-
-  /*Button styles*/
+    margin-bottom: 35px;
+  } 
   
   button {
     display: block;
-    margin: 0 auto;
-    font-family: Playfair Display, sans-serif;
-    font-size: 20px;
-    color: #626262;
+    margin: 0 auto;    
+    font-size: 20px;   
     border: 1px solid;
     border-color: #626262;
     padding: 20px 35px;
