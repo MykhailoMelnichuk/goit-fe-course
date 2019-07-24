@@ -7,15 +7,14 @@
 }
 
 body {
-    font-family: Playfair Display, sans-serif;
-    font-size: 14px;
     background-color: #eee6b7;
 }
 
 .wraper {
     width: 1200px;
     margin: 0 auto;
-    
+    font-family: Playfair Display, sans-serif;
+    font-size: 14px;    
 }
 
 nav {
@@ -49,7 +48,8 @@ a {
 .menu-item:hover {
     border: #012e07 2px solid;
     background-color: #13c74f;
-    color: #fcfcfc;    
+    color: #fcfcfc;  
+    cursor: pointer;  
 }
 
 .menu-item a:hover {
@@ -122,4 +122,5 @@ body {
     height: 24px;
     text-align: center;
     margin-right: 5px;
+    background-color: #1187f5;
 }
