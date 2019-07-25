@@ -1,0 +1,17 @@
+body {
+    background-color: #eee6b7;
+}
+
+.wraper {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Playfair Display, sans-serif;
+    font-size: 32px; 
+    font-weight: 500;   
+}
+
+h1 {
+    font-size: 48px;
+    margin: 50px;
+}
+

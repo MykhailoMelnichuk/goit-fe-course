@@ -1,0 +1,10 @@
+body {
+    background-color: #eee6b7;
+}
+
+.wraper {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Playfair Display, sans-serif;
+    font-size: 14px;    
+}

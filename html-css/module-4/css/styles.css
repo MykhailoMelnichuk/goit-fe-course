@@ -4,7 +4,7 @@
 *::before, *::after {
     box-sizing: inherit;
 }
-.clearfix::affter {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
@@ -148,10 +148,6 @@ img {
     background-color: #1abc9c;
 }
 
-.news h2{
-    margin-top: 930px;
-}
-
 .news-anoncement {
     margin-top: 82px;
 }
@@ -198,13 +194,7 @@ img {
 }
 
 .read-more-button {
-    background-color: #4ec6ab;
-    width: 160px;
-    padding: 12px;
-    line-height: 26px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 5px;
+    
     cursor: pointer;
 }
 
@@ -215,5 +205,11 @@ img {
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
-    width: 100%;
+    background-color: #4ec6ab;
+    width: 160px;
+    height: 50px;
+    padding: 12px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 5px;
 }
