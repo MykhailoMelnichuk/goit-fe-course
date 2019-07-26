@@ -50,7 +50,6 @@ nav {
     font-weight: 700;
     text-align: right;
     text-transform: uppercase;    
-    height: 23px;
     font-size: 14px;
     line-height: 32px;
     float: right;
@@ -124,7 +123,6 @@ img {
 
 .products-title {
     background-color: #323232;
-    height: 40px;
 }
 
 .products-name {
@@ -191,11 +189,6 @@ img {
     line-height: 26px;
     color: #555252;
     margin-bottom: 14px;
-}
-
-.read-more-button {
-    
-    cursor: pointer;
 }
 
 .read-more-button a {
