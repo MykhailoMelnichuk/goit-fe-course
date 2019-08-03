@@ -10,11 +10,7 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #999999;
-    line-height: 25px;
+    
 }
 
 a {
@@ -27,8 +23,16 @@ img {
     height: auto;
 }
 
-.logo a, .top-menu-item {
+.logo a, .top-menu-item, .item-header {
     font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    line-height: 25px;
 }
 
 section {
@@ -49,11 +53,12 @@ header {
     font-weight: 700;
     font-size: 30px;
     color: #95e1d3;
-
 }
 
 .logo a:hover {
     color: #f38181;
+    transition: 200ms;
+    transition-timing-function: linear; 
 }
 
 .top-menu {
@@ -76,6 +81,7 @@ header {
 .top-menu-item a:hover,
 .top-menu-item a:focus {
     color: #f38181;
+    transition: opacity 200ms linear;
 }
 
 
@@ -94,6 +100,7 @@ header {
 .top-menu-item:hover::before,
 .top-menu-item:hover:focus {
     opacity: 1;
+    transition: opacity 200ms linear;
 }
 
 /* services */
@@ -181,6 +188,13 @@ header {
     background-image: url(../img/icon/image.png);
 }
 
+.item-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+
 
 /* section team */
 
@@ -189,6 +203,152 @@ header {
     text-align: center;
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
 
+.team-item {
+    flex-basis: 380px;
+}
+
+.team-backgraund-item {
+    position: relative;
+}
+
+.team-backgraund-item:hover .team-item-hover {
+    visibility: visible;
+    top: -10px;
+    left: -10px;
+    bottom: 10px;
+    right: 10px;
+    transition: 200ms;
+    transition-timing-function: linear;  
+}
+
+.team-item-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.social-icon a {
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+
+
+.social-icon:not(:last-child) {
+    margin-right: 1px;
+}
+.icon-facebook {
+    background: url(../img/social-icon/facebook.png) no-repeat center #fce38a;
+}
+.icon-twitter {
+    background: url(../img/social-icon/twitter.png) no-repeat center #fce38a;
+}
+.icon-pinterest {
+    background: url(../img/social-icon/pinterest.png) no-repeat center #fce38a;
+}
+.icon-instagram {
+    background: url(../img/social-icon/instagram.png) no-repeat center #fce38a;
+}
+.social-icon:hover {
+    background-color: #95e1d3;;
+}
+
+.team-description {
+    text-align: center;
+    margin-top: 31px;
+}
+
+.team-description p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* gradient f38181 rgba(252, 227, 138, 0.9) - fce38a rgba(243, 129, 129, 0.9) */
+
+main {
+    margin-bottom: 84px;
+}
 
 /* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e7e7e7;
+    min-height: 62px;
+    color: #999999;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+ }
+
+footer a {
+    color: #f38181;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0px;
+ }
+
+.input-email {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+    padding: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.input-email::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: italic;
+    color: #cccccc;
+}
+
+.button-subscribe {
+    background-color: #95e1d3;
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffff;
+    text-transform: uppercase;
+    padding: 12px 34px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-subscribe:hover {
+
+}
+

@@ -190,7 +190,6 @@ h2::after {
 
 .new-collection-item-about {
     background-color: #323232;
-    width: 255px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -198,7 +197,6 @@ h2::after {
     text-transform: uppercase; 
     float:left;  
     margin-bottom: 30px;
-    height: 40px;
 }
 
 .new-collection-item:not(:nth-child(4n)) {
