@@ -206,6 +206,7 @@ header {
 .team-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 84px;
 }
 
 .team-item {
@@ -214,6 +215,7 @@ header {
 
 .team-backgraund-item {
     position: relative;
+    background-color: #95e1d3;
 }
 
 .team-backgraund-item:hover .team-item-hover {
@@ -241,6 +243,11 @@ header {
     transition-property: all;
     transition-duration: 200ms;
 }
+/* 
+.transit-hover img {
+    transition-property: all;
+    transition-duration: 200ms;
+} */
 
 .social-icon a {
     display: block;
@@ -265,8 +272,25 @@ header {
     background: url(../img/social-icon/instagram.png) no-repeat center #fce38a;
 }
 .social-icon:hover {
-    background-color: #95e1d3;;
+    background-color: #95e1d3;
 }
+
+.team-foto-item {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: left, top;
+    transition-duration: 200ms;
+}
+
+.team-backgraund-item:hover .team-foto-item {
+    top: -10px;
+    left: -10px;
+    transition: 200ms;
+    transition-timing-function: linear;  
+}
+
 
 .team-description {
     text-align: center;
@@ -282,10 +306,6 @@ header {
 }
 
 /* gradient f38181 rgba(252, 227, 138, 0.9) - fce38a rgba(243, 129, 129, 0.9) */
-
-main {
-    margin-bottom: 84px;
-}
 
 /* footer */
 
