@@ -1,0 +1,318 @@
+/* Fonts */
+@import "./fonts.css";
+
+/* common styles */
+* {
+    box-sizing: border-box;
+}
+
+ a {
+     text-decoration: none;
+ }
+ 
+ img {
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+
+ .button {
+    display: block;
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;   
+    border-radius: 40px;
+    cursor: pointer;
+}
+ 
+
+/* header and banner */
+
+.banner {
+    background-color: rgb(26, 25, 21);
+    background-image: url(../img/banner/banner-mob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    min-width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.indent-bottom {
+    margin-bottom: 116px;
+} 
+
+.pading-heder-top {
+    padding-top: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+
+.logo:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-menu-button {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    width: 86px;
+    height: 30px;
+}
+
+.login-menu-buttong:hover {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: rgba(26, 25, 21, 0);
+}
+
+.login-menu-button:first-child {
+    margin-right: 20px;
+}
+
+.logo-dubl {
+    margin-bottom: 40px;
+}
+
+.banner-title {
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.banner-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    color: #fff;
+    line-height: 1.2;
+    border: none;
+    background-color: #ff4e50;
+    align-items: center;
+}
+
+.banner-button:hover {
+    color: #ffffff;
+}
+
+/* section-partners */
+
+.partners {
+    padding-top: 70px;
+    max-width: 90%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.partners-title {
+    font-size: 22px;
+    line-height: 1.2;
+    color: #333; 
+    margin: 0 auto;
+    margin-bottom: 20px; 
+}
+
+.partners-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.partners-item {
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+.partners-item-foto {
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.partners-item-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.partners-item-foto::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-tv::after {
+    background-image: url(../img/icon/icon-tv.png);
+    background-color:#ff4e50;
+ 
+}
+.icon-flask::after {
+    background-image: url(../img/icon/icon-flask.png);
+    background-color:#ffa507;
+}
+.icon-cup::after {
+    background-image: url(../img/icon/icon-cup.png);
+    background-color:#1cd7ad;
+}
+.icon-plane::after {
+    background-image: url(../img/icon/icon-plane.png);
+    background-color:#4e73db;
+}
+
+.partners-item-name {
+    font-size: 14px;
+    color: #333;
+    padding: 16px;
+}
+
+.partners-item-about {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666; 
+}
+
+.button-other-partners {
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    margin-bottom: 56px;
+} 
+
+@media screen and (min-width:748px) { 
+
+    .button {
+        width: 226px;
+    }
+
+    .banner {
+        background-image: url(../img/banner/banner-tab.png);
+        min-height: 700px;
+     
+    }
+
+    .indent-bottom {
+        margin-bottom: 160px;
+    } 
+    
+    .pading-heder-top {
+        padding-top: 50px;
+    }
+    
+    .login-menu-button {
+        padding-top: 0;
+    }
+
+    .banner-title {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .banner-text {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .partners {
+        margin-bottom: 74px;
+        max-width: 100%;
+      }
+
+    .partners-title {
+        margin-bottom: 30px; 
+    }
+
+    .partners-list {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .partners-item {
+        flex-basis: 236;
+        margin-bottom: 40px;
+    }
+    .button-other-partners {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 940px) {
+    .container {
+        width: 940px;
+    }
+    
+    .banner {
+        background-image: url(../img/banner/banner-desktop.png);
+        min-height: 700px;
+    }
+
+     .indent-bottom {
+        margin-bottom: 170px;
+    } 
+    
+    .pading-heder-top {
+        padding-top: 44px;
+    }
+ 
+    .banner-title {
+        padding:0px 200px;
+    }
+
+    .partners {
+        margin-bottom: 72px;
+        min-width: 100%;
+    }
+
+    .partners-item {
+        flex-basis: 220;
+    }
+
+    .button-other-partners {
+        margin-bottom: 74px;
+    }
+} 
