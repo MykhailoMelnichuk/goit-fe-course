@@ -273,7 +273,6 @@
     }
 
     .partners-item {
-        flex-basis: 236;
         margin-bottom: 40px;
     }
     .button-other-partners {
@@ -305,7 +304,7 @@
     }
 
     .partners-item {
-        flex-basis: 220;
+        width: 220px;
     }
 
     .button-other-partners {
