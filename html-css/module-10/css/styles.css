@@ -321,6 +321,7 @@ header {
   
 .item-header {
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #333;
