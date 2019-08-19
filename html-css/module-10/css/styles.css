@@ -321,6 +321,7 @@ header {
   
 .item-header {
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #333;
@@ -500,9 +501,6 @@ header {
     font-style: italic;
     text-align: center;
 }
-
-
-
 
 /* footer */
 
