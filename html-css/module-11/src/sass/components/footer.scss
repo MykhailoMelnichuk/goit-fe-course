@@ -1,0 +1,21 @@
+/* footer */
+
+footer {
+    @include flex-align ('between-center');
+    border-top: 1px solid $main-border-color;
+    min-height: 62px;
+    color: $secondery-darck-color;
+
+    & p {
+        font-family: $main-font-title;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    
+    & a {
+        color: $secondery-axent-color;
+    }
+    
+}
+

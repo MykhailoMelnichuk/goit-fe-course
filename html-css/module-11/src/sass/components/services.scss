@@ -1,0 +1,93 @@
+.services {
+    padding-top: 94px;
+}
+
+
+.block-title {
+    color: $main-darck-color;
+    text-align: center;
+
+    &__head {
+        position: relative;
+        font-family: $main-font-title;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &::before{
+            position: absolute;
+            top: 108px;
+            left: 50%;
+            transform: translate(-50%);
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: $secondery-axent-color;
+        }
+        
+
+    }
+    
+    &__head span {
+        display: block;
+        font-family: $secondery-font-title;
+        font-size: 24px;
+        text-transform: none;
+        margin-bottom: 22px;
+    }
+    
+ }
+ 
+
+
+
+
+
+ .services__list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     margin-top: 94px;
+     @extend %list;
+ }
+ 
+ .services__item {
+     position: relative;
+     display: flex;
+     flex-basis: 380px;
+     justify-content: space-between;
+
+     &:not(:nth-last-of-type(-n + 3)) {
+        margin-bottom: 100px;
+    }
+    
+
+ }
+ 
+
+ .services__img {
+     flex: 0 0 84px;
+     display: flex;
+     justify-content: center;
+     margin-top: 14px;
+ }
+ 
+ .services__icon {
+     fill: $main-background-color;
+ }
+   
+ .services__text {
+     font-family: $main-font-text;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 24px;
+     color: $secondery-darck-color;
+ }
+   
+ .item-header {
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 400;
+     color: $main-darck-color;
+ }
+ 

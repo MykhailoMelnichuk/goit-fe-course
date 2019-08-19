@@ -1,0 +1,16 @@
+.banner {
+    height: 1000px;
+    background: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+    ), url(../images/banner/background-min.jpg) center/cover no-repeat;
+
+    &__header {
+        width: 800px;
+        color: $main-white-color;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+}

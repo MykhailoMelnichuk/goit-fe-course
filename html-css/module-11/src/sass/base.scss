@@ -1,0 +1,36 @@
+/* common styles */
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $main-font-text;
+    font-weight: 400;
+    font-size: 15px;
+    color: $secondery-darck-color;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+@media 
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .banner {
+        background: linear-gradient(
+            to top,
+            rgba(252, 227, 138, 0.9),
+            rgba(243, 129, 129, 0.9)
+        ), url(../imgfges/banner/background@2x-min.jpg) center/cover no-repeat;
+    }
+}

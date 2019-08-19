@@ -1,0 +1,26 @@
+/*
+   Import partials below
+*/
+@import 'helpers/variables';
+@import 'normalize';
+@import 'base';
+@import 'helpers/playholders';
+@import 'helpers/mixin';
+
+/* Components */
+@import 'components/wrapper';
+@import 'components/visually-hidden';
+@import 'components/button';
+@import 'components/banner';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/main-nav';
+@import 'components/banner__title';
+@import 'components/banner__span';
+@import 'components/banner__button';
+@import 'components/services';
+@import 'components/team';
+@import 'components/social-icon';
+@import 'components/footer';
+@import 'components/email-form';
+// @import 'components/';

@@ -1,0 +1,16 @@
+.logo__link {
+    @extend %link;
+    font-family: $main-font-title;
+    font-weight: 700;
+    font-size: 30px;
+    color: $main-white-color;
+    transition-property: color;
+    transition-duration: $time-transition;
+
+
+    &:hover {
+        color: $main-axent-color;
+    }
+
+}
+

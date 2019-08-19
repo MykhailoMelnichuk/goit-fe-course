@@ -1,0 +1,41 @@
+
+.social-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $main-axent-color;
+    transition-property: background-color;
+    transition-duration: $time-transition;
+
+    &:not(:last-child) {
+        margin-right: 2px;
+    }
+    
+    &:hover {
+        background-color: $secondery-axent-color;
+        transition-duration: $time-transition;
+        transition-timing-function: linear; 
+    }
+
+}
+    
+    .social-icon a {
+        display: block;
+        background-position: center;
+        width: 56px;
+        height: 56px;
+        @include flex-align ('center');  
+        padding-top: 16px;
+        text-align: center;     
+    }
+    
+    .social-icon__svg {        
+        fill: $secondery-axent-color;
+        transition-property: fill;
+        transition-duration: $time-transition;
+        
+    }
+    
+    .social-icon:hover .social-icon__svg {
+        fill: $main-axent-color;
+    }
+     

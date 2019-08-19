@@ -1,0 +1,44 @@
+
+.email-form {
+    @include flex-align ('justify-end');
+    font-size: 0px;
+
+    
+    &__input {
+        width: 230px;
+        height: 40px;
+        border: 1px solid $main-border-color;
+        border-right: none;
+        padding: 14px;
+        font-family: $main-font-text;
+        font-weight: 400;
+        font-size: 15px;
+
+        &::placeholder {
+            font-family: $main-font-text;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 24px;
+            font-style: italic;
+            color: $main-placeholder-color;
+        }
+    }
+
+
+
+    &__button {
+        background-color: $main-background-color;
+        width: 150px;
+        height: 40px;
+        font-family: $main-font-title;
+        font-weight: 700;
+        font-size: 14px;
+        color: $main-white-color;
+        text-transform: uppercase;
+        padding: 12px 34px;
+        border: none;
+        cursor: pointer;
+    }
+
+
+}
